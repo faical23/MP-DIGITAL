@@ -205,7 +205,7 @@ export default {
     justify-content: space-between;
 }
 .Card__Single{
-    padding: 40px ;
+    padding: 60px  40px;
     margin:10px 30px;
     background:white;
     box-shadow: 0px 0px 11px -6px black;
