@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
+  <div>
     <section class="navbar">
       <nav class="container">
         <div class="navbar-brand">
           <n-link class="navbar-item" to="/">
             <img
               class="logo"
-              src="~static/mp-digital-logo-dark.png"
+              src="~static/mp-digital-logo-light.png"
               alt="Mark Perez Digital"
             />
           </n-link>
@@ -17,6 +17,7 @@
             @click="showNav = !showNav"
             data-target="navMenu"
           >
+            <!-- hamburger lines -->
             <span></span>
             <span></span>
             <span></span>
@@ -27,6 +28,7 @@
         <div id="navMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
           <div @click="showNav = !showNav" class="navbar-end">
             <n-link class="navbar-item" to="/blog/">Blog</n-link>
+            <n-link class="navbar-item" to="/CaseStudy/">Case Study</n-link>
             <n-link class="navbar-item" to="/gear/">Gear</n-link>
             <n-link class="navbar-item" to="/contact/">Contact</n-link>
             <a
@@ -55,11 +57,9 @@ export default {
 </script>
 
 <style scoped>
-
 hr {
-  background-color: transparent
+  background-color: transparent;
 }
-
 
 a:hover,
 a:active,
@@ -71,8 +71,8 @@ a:focus {
 .button {
   letter-spacing: 1px;
   font-weight: bold;
-  color: black;
-  background-color: #00c58e;
+  color: #fff;
+  background-color: #2f495d;
   border-color: rgba(255, 255, 255, 0);
 }
 
@@ -81,7 +81,7 @@ a:focus {
 }
 
 .navbar-menu {
-  background-color: transparent;
+  background-color:#00966b, #17ffbe;
 }
 
 .navbar {
@@ -94,8 +94,13 @@ a:focus {
 .navbar-item {
   font-size: 18px;
   padding-right: 2rem;
-  color: black;
+  color: #2f495d;
   font-weight: bolder;
+  transition: 0.3s all;
+}
+
+.navbar-item:hover {
+  color: #fff;
 }
 
 .navbar-brand {

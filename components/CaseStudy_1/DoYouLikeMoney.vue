@@ -1,5 +1,5 @@
 <template>
-  <div class="DoYouLike">
+  <div class="DoYouLike  v-scroll-reveal" v-scroll-reveal.reset>
         <div class="Illustrations">
             <img  src="../../assets/images/Illustrations/CaseStudyIllustartion1.png" alt="">
         </div>
@@ -7,7 +7,14 @@
                 <h3>quick question:</h3>
                 <h1 class="Green">Do You Like <span>Money</span> ?</h1>
                 <p>Then you'll love our content.</p>
-                <form action="">
+                <form 
+                  class="f_subscribe_two mailchimp validate"
+                  action="https://dev.us20.list-manage.com/subscribe/post?u=0e646f9cc09aa7c7a450ae8b6&amp;id=a5dd106a2e"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  target="_blank"
+                  novalidate>
                     <input type="text" placeholder="Email*">
                     <button>Submit</button>
                 </form>
@@ -42,6 +49,7 @@ export default {
 h3{
     font-size:25px;
     font-weight:bolder;
+    margin-bottom: 10px;
 }
 h1{
     font-family: 'Poppins', sans-serif;

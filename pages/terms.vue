@@ -1,5 +1,7 @@
 <template>
-  <div class="container">
+  <div class="terms container">
+        <app-nav> </app-nav>
+
     <h1>Terms of Service</h1>
 
     <h3>Overview</h3>
@@ -400,6 +402,8 @@
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue'
+
 export default {
   data() {
     return {
@@ -407,7 +411,9 @@ export default {
       description: 'Click here to read the Terms Of Service for MP Digital.'
     }
   },
-
+    components: {
+    'app-nav': Nav,
+  },
   head() {
     return {
       title: this.title,
@@ -424,7 +430,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 h1 {
   font-size: 30px;
   padding-top: 0.5rem;
@@ -436,7 +442,7 @@ h3 {
   margin: 1rem 0;
 }
 
-p {
+.terms p {
   margin-bottom: 1.5rem;
 }
 

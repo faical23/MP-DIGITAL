@@ -1,5 +1,5 @@
 <template>
-  <div class="IncreasedLead">
+  <div class="IncreasedLead v-scroll-reveal" v-scroll-reveal.reset>
         <h1>INCREASED LEAD VOLUME BY 68.04%</h1>
         <p>How we helped a small business take big steps in a competitive market.</p>
         <div class="IncreasedLead_Statistique">
@@ -137,7 +137,7 @@ export default {
     border-radius: 30px;  
     text-align: center;
     padding-top:60px ;
-  background: linear-gradient(90deg, rgb(12 223 164) 0%, rgba(3,202,146,1) 36%, rgba(11,222,162,1) 65%, rgb(40, 255, 194) 80%);
+    background: linear-gradient(35deg, #0e9e75, #17ffbe);
 
 
 }

@@ -1,6 +1,7 @@
 <template>
   <div>
     <nuxt />
+
     <app-footerlogo></app-footerlogo>
   </div>
 </template>

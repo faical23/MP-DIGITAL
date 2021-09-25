@@ -67,10 +67,27 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'
       }
     ],
 
     script: [
+      {
+        src: 'https://code.jquery.com/jquery-3.6.0.min.js'
+      },
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'
+      },
       {
         type: 'application/ld+json',
         innerHTML: JSON.stringify({
@@ -79,8 +96,7 @@ export default {
           name: 'Mark Perez Digital',
           alternateName: 'MP Digital',
           url: 'https://markperez.dev/',
-          logo:
-            'https://markperez.dev/mp-digital-logo-dark.png',
+          logo: 'https://markperez.dev/mp-digital-logo-dark.png',
           email: 'info@markperez.dev',
           sameAs: [
             'https://www.youtube.com/channel/UCCZ1Yo4NOdWW03jamsNFA8w',
@@ -104,7 +120,8 @@ export default {
     '~/plugins/typer.js',
     '~/plugins/spinner.js',
     '~/plugins/silentbox.js',
-    '~/plugins/disqus.js'
+    '~/plugins/disqus.js',
+    { src: '~/plugins/scrollreveal.js', ssr: false }
   ],
 
   // Nuxt.js modules

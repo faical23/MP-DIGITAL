@@ -1,7 +1,7 @@
 <template>
   <div class="Reviews">
         <h1>Testimonial</h1>
-        <div class="Reviews__Single">
+        <div class="Reviews__Single v-scroll-reveal" v-scroll-reveal.reset>
             <div class="Reviews__Single__Img">
                 <img src="../../assets/images/Reviews.png" alt="">
             </div>

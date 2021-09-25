@@ -5,7 +5,7 @@
                 <n-link to="/">
                     <img
                     class="logo"
-                    src="~static/Logo-With.png"
+                    src="~static/mp-digital-logo-light.png"
                     alt="Mark Perez Digital"
                     />
                 </n-link>
@@ -97,15 +97,22 @@
             </div>
              <div class="Links">
                 <a href="#"><p>What carry out a test? in the press</p></a>
-                <a href="#"><p>About Us</p></a>
-                <a href="#"><p>Press</p></a>
-                <a href="#"><p>Associations</p></a>
-                <a href="#"><p>Companies</p></a>
-                <a href="#"><p>Individuals</p></a>
+                <a href="#"><n-link to="/"><p>About Us</p></n-link></a>
+                <a href="#"><n-link to="/"><p>Press </p></n-link></a>
+                <a href="#"> <n-link to="/"><p>Associations</p></n-link></a>
+                <a href="#"><n-link to="/"><p>Companies </p></n-link></a>
+                <a href="#"> <n-link to="/"><p>Individuals</p></n-link></a>
             </div>
             <div class="Email">
                 <h2>Subscribe</h2>
-                <form action="">
+                <form 
+                class="f_subscribe_two mailchimp validate"
+                  action="https://dev.us20.list-manage.com/subscribe/post?u=0e646f9cc09aa7c7a450ae8b6&amp;id=a5dd106a2e"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  target="_blank"
+                  novalidate>
                     <input type="text" placeholder="Entrer email">
                     <button>Send</button>
                 </form>

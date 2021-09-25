@@ -1,15 +1,34 @@
 <template>
-  <div class="ContactUs">
+  <div class="ContactUs v-scroll-reveal" v-scroll-reveal.reset>
       <div class="ContactUs__Ilustration">
         <img class="Heroillustration" src="../../assets/images/Illustrations/HomePgae4.png" alt="">
       </div>
     <div class="ContactUs__Content">
             <h1>Contact Us</h1>
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button class="button buttonPrimary is-rounded">Submit</button>
+            <form 
+                  @submit="handleRequest"
+                  action="https://formspree.io/info@markperez.dev"
+                  method="POST"
+                  >
+                <input 
+          type="text"
+          name="name"
+          placeholder="Name"
+          aria-label="full name"
+          required>
+                <input 
+          type="email"
+          name="email"
+          placeholder="Email"
+          aria-label="email address"
+          required>
+                <textarea 
+            class="textarea"
+            name="message"
+            placeholder="Message..."
+            aria-label="message"
+            required></textarea>
+                <button class="button buttonPrimary is-rounded" value="submit">Submit</button>
             </form>
       </div>
   </div>
@@ -69,8 +88,8 @@ export default {
 }
 .ContactUs input, .ContactUs textarea{
     display: block;
-    width: 90%;
-    padding:15px 25px;
+    width: 100%;
+    padding:20px 25px;
     border-radius: 6px;
     margin-bottom:20px;
     border: 1px solid #c0c0c0;

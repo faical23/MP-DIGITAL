@@ -1,6 +1,9 @@
 <!-- pages/blog/_slug/index.vue -->
 <template>
+
   <div class="container">
+        <app-nav> </app-nav>
+
     <section class="columns is-centered is-multiline">
       <!-- Blog Post -->
       <article class="column is-7">
@@ -88,6 +91,7 @@ import { linkResolver, htmlSerializer } from '@/plugins/prismic-config.js'
 import SideBar from '@/components/SideBar.vue'
 import PrismicDOM from 'prismic-dom'
 import gql from 'graphql-tag'
+import Nav from '@/components/Nav.vue'
 
 // blog post query
 const currentPost = gql`
@@ -109,7 +113,9 @@ const currentPost = gql`
 
 export default {
   components: {
-    'app-sidebar': SideBar
+    'app-sidebar': SideBar,
+        'app-nav': Nav,
+
   },
 
   data() {

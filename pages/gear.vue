@@ -1,5 +1,8 @@
 <template>
+
   <div class="container">
+    <app-nav> </app-nav>
+
     <h1>{{ title }}</h1>
     <h2>{{ description }}</h2>
     <section class="columns is-centered is-multiline">
@@ -123,13 +126,19 @@
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue'
+
 export default {
+
   data() {
     return {
       title: 'Gear',
       description:
         'Here is a list of all of the gear we all use on a daily basis. As Amazon Associates, we will earn from qualified commissions.'
     }
+  },
+    components: {
+    'app-nav': Nav,
   },
 
   head() {

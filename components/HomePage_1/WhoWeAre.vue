@@ -1,5 +1,7 @@
 <template>
-<div class="Backgorund">
+<div 
+    class="Backgorund whoweare-top v-scroll-reveal" v-scroll-reveal.reset
+>
   <div class="WhoWeAre">
       <h1>Who we are !</h1>
       <div class="WhoWeAre__Cards">

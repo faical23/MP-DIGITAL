@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+        <app-nav> </app-nav>
+
     <h1>{{title}}</h1>
     <h2>{{description}}</h2>
 
@@ -10,6 +12,8 @@
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue'
+
 export default {
   data() {
     return {
@@ -18,7 +22,9 @@ export default {
         'Your Linux Guide will be availible in your inbox. Give it around a few minutes to arrive.'
     }
   },
-
+    components: {
+    'app-nav': Nav,
+  },
   head() {
     return {
       title: this.title,

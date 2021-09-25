@@ -1,5 +1,5 @@
 <template>
-  <div class="WantToBe">
+  <div class="WantToBe ">
       <h1>WANT TO BE OUR NEXT SUCCESS SRORY ?</h1>
       <p>Our track record proves we know how to help you make more money and fuel business growth</p>
       <button>REQUEST PROPOSAL</button>

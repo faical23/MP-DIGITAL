@@ -1,5 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container privacy">
+    <app-nav> </app-nav>
+
     <h1>Privacy Policy</h1>
 
     <p>
@@ -214,16 +216,19 @@
   </div>
 </template>
 
-<script>
+<script scoped>
+import Nav from '@/components/Nav.vue'
+
 export default {
   data() {
     return {
       title: 'Privacy Policy',
-      description:
-        'Click here to read the Privacy Policy for MP Digital.'
+      description: 'Click here to read the Privacy Policy for MP Digital.'
     }
   },
-
+    components: {
+    'app-nav': Nav,
+  },
   head() {
     return {
       title: this.title,
@@ -252,7 +257,7 @@ h3 {
   margin: 1rem 0;
 }
 
-p {
+.privacy p {
   margin-bottom: 1.5rem;
 }
 

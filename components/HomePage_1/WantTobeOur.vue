@@ -1,5 +1,5 @@
 <template>
-  <div class="WantToBe">
+  <div class="WantToBe  v-scroll-reveal" v-scroll-reveal.reset >
       <div class="Content">
                   <h1>Want To Be Our Next Success Story?</h1>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>

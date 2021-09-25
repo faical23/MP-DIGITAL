@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+        <app-nav> </app-nav>
+
     <h1>{{ title }}</h1>
     <h2>{{ description }}</h2>
 
@@ -64,6 +66,7 @@
 
 <script>
 import gql from 'graphql-tag'
+import Nav from '@/components/Nav.vue'
 
 const articles = gql`
   query($fulltext: String, $cursor: String) {
@@ -106,7 +109,9 @@ export default {
       keyword: '' // for searchPosts()
     }
   },
-
+    components: {
+    'app-nav': Nav,
+  },
   head() {
     return {
       title: this.title,

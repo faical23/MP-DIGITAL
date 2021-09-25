@@ -1,6 +1,6 @@
 <template>
-  <div class="PracticeChallengeSolution">
-      <div class="Practice">
+  <div class="PracticeChallengeSolution ">
+      <div class="Practice ">
           <div class="Practice__Content">
                 <h1>PRIVATE PRACTICE INCREASES THIER LEAD BOLUME BY 68.04%</h1>
                 <p>Dr. Ari Sytner is a passionate and highly-skilled therapist who focuses on relationship, dating, and marriage therapy.</p>
@@ -15,7 +15,7 @@
             <img  src="../../assets/images/Illustrations/Practice.png" alt="">
           </div>
       </div>
-      <div class="Practice Challenge PracticeZone">
+      <div class="Practice Challenge PracticeZone ">
           <div class="Practice__Illustrations">
             <img  src="../../assets/images/Illustrations/Challange.png" alt="">
           </div>
@@ -40,7 +40,7 @@ reasons why the campaigns started to slip in performance
 and looked like a “death by a thousand cuts” situation.</p>
           </div>
       </div>
-  <div class="Practice Challenge Solution  SolutionZone">
+  <div class="Practice Challenge Solution  SolutionZone ">
           <div class="Practice__Illustrations">
             <img  src="../../assets/images/Illustrations/Solution.png" alt="">
           </div>
