@@ -29,6 +29,7 @@
         <div id="navMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
           <div @click="showNav = !showNav" class="navbar-end">
             <n-link class="navbar-item" to="/blog/">Blog</n-link>
+            <n-link class="navbar-item" to="/CareStudy/">Case Study</n-link>
             <n-link class="navbar-item" to="/gear/">Gear</n-link>
             <n-link class="navbar-item" to="/contact/">Contact</n-link>
             <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -159,9 +160,7 @@ export default {
   margin:auto;
   border-radius: 20px;
   margin-top: 20px;
-  background: rgb(0,197,142);
-  background: linear-gradient(90deg, rgb(12 223 164) 0%, rgba(3,202,146,1) 36%, rgba(11,222,162,1) 65%, rgb(40, 255, 194) 80%);
-}
+    background: linear-gradient(35deg, #00966b, #17ffbe);}
 .HomePageNav{
     padding:20px 140px 20px 140px;
     display: flex;

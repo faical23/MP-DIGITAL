@@ -27,6 +27,7 @@
         <div id="navMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
           <div @click="showNav = !showNav" class="navbar-end">
             <n-link class="navbar-item" to="/blog/">Blog</n-link>
+            <n-link class="navbar-item" to="/CareStudy/">Case Study</n-link>
             <n-link class="navbar-item" to="/gear/">Gear</n-link>
             <n-link class="navbar-item" to="/contact/">Contact</n-link>
             <a
